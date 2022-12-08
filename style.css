@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Inter:wght@200&family=Neonderthaw&family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap');
+
+:root{
+    --bg:#333;
+    --black-font:#444;
+    --primary-font:#f3f3f3;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 4000px;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+section{
+    padding: 3rem 8%;
+}
+
+header .headerBox{
+    background:var(--bg);
+    padding: 2rem 7%;
+    display: flex;
+    justify-content: space-between;
+    background: url('img/heroBanner.jpg');
+    background-size: cover;
+    height: 700px;
+    background-position: center;
+    position: relative;
+}
+
+header .header-1{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+header .header-1 .logo{
+    color: var(--primary-font);
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 1.7rem;
+}
+
+header .navbar .burger{
+    cursor: pointer;
+    position: fixed;
+    right: 8%;
+    z-index: 100;
+}
+
+.bars1, .bars2, .bars3{
+    width: 20px;
+    height: 3px;
+    background: var(--primary-font);
+    margin-bottom: 3px;
+}
+header .sidenav{
+    position: fixed;
+    background: var(--bg); 
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: -100%;   
+    padding: 3rem 7%;
+    transition: 1s;
+    z-index: 70;
+}
+
+header .sidenav.active{
+    left: 0;   
+    transition: 2s;
+}
+
+.sidenav ul{
+    list-style: none;
+}
+
+.sidenav ul li{
+    margin-top: 50px;
+}
+
+.sidenav ul li a{
+    color: var(--primary-font);
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 2rem;
+}
+
+header .tagline .headerBox{
+    padding: 0 10%;
+}
+
+header .tagline {
+    padding: 0 10%;
+    top: 30%;
+    position: absolute;
+    color: var(--primary-font);
+    z-index: 50;
+    max-width: 600px;
+
+}
+
+header .tagline h1{
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    font-weight: 800;
+    font-size: 4rem;
+    letter-spacing: 3px;
+}
+
+header .tagline p{
+    line-height: 25px;
+}
+
+header .tagline i{
+    color: var(--primary-font);
+    margin-top: 20px;
+}
+
+.firstSection{
+    margin-top: 150px;
+}
+
+.firstSection .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.secondSection{
+    margin-top: 180px;
+}
+
+.secondSection .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    flex-wrap: wrap-reverse;
+}
+
+.secondSection .content .images{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+.firstSection .content .images{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.secondSection .content .images img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.firstSection .content .images img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.secondSection .content .thumbNail{
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    top: 10%;
+    left: -20%;
+}
+.firstSection .content .thumbNail{
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    top: 10%;
+    right: -20%;
+}
+
+.secondSection .content .thumbNail img{
+    width: 100%;
+    height: 100%;
+}
+
+.firstSection .content .thumbNail img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.secondSection .content .textContent{
+    position: relative;
+    width: 500px;
+}
+
+.firstSection .content .textContent{
+    position: relative;
+    width: 500px;
+}
+
+.secondSection .content .textContent .contentBox{
+    position: absolute;
+    right: 0;
+    left: 0;
+}
+
+.firstSection .content .textContent .contentBox{
+    position: absolute;
+    right: 0;
+    left: 0;
+}
+
+.secondSection .content .textContent .contentBox h5{
+    color: var(--black-font);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: .8rem;
+    margin-bottom: 10px;
+}
+
+.firstSection .content .textContent .contentBox h5{
+    color: var(--black-font);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: .8rem;
+    margin-bottom: 10px;
+}
+
+.secondSection .content .textContent .contentBox h1{
+    text-transform: uppercase;
+    color: var(--black-font);
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.firstSection .content .textContent .contentBox h1{
+    text-transform: uppercase;
+    color: var(--black-font);
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.secondSection .content .textContent .contentBox p{
+    color: var(--black-font);
+    letter-spacing: 1.5px;
+}
+
+.firstSection .content .textContent .contentBox p{
+    color: var(--black-font);
+    letter-spacing: 1.5px;
+}
+
+.schedule{
+    margin-top: 150px;
+}
+
+.schedule .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.schedule .content h5{
+    text-transform: capitalize;
+    color: var(--black-font);
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+}
+
+.schedule .content h1{
+    color: var(--black-font);
+    text-transform: capitalize;
+    letter-spacing: 1.5px;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+.schedule .content p{
+    max-width: 400px;
+    text-align: center;
+    color: var(--black-font);
+    margin-bottom: 30px;
+}
+
+.schedule .content .btn{
+    text-decoration: none;
+    color: var(--primary-font);
+    background: var(--black-font);
+    padding: 7px 10px;
+    text-transform: capitalize;
+}
+
+.works h3{
+    color: var(--black-font);
+    text-transform: capitalize;
+}
+
+.works .content{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 35px;
+}
+
+.works .content .images{
+    width: 280px;
+    height: 350px;
+}
+
+.works .content .images p{
+    text-transform: capitalize;
+    font-weight: 800;
+    color: var(--black-font);
+}
+
+.works .content .images img{
+    width: 100%;
+    height: 100%;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer .copyright ul{
+    list-style: none;
+    display: flex;
+}
+
+.footer .copyright ul li{
+    margin-right: 20px;
+    text-transform: capitalize;
+    color: var(--black-font);
+}
+
+.footer .sci ul{
+    list-style: none;
+    display: flex;
+}
+
+.footer .sci ul li{
+    margin-right: 20px;
+    text-transform: capitalize;
+    color: var(--black-font);
+}
+
+.footer .sci ul li a i{
+    color: var(--black-font);
+    font-size: 1.7rem;
+}
+
+.footer .sci ul li:nth-child(3) a i{
+    color: var(--primary-font);
+    background: var(--black-font);
+    padding: 15px;
+}
+
+
+
+
+
+
+@media(max-width:1115px){
+    .firstSection .content .images{
+        width: 300px;
+        height: 400px;
+    }
+    .firstSection .content .thumbNail{
+        width: 200px;
+        height: 150px;
+        position: absolute;
+        top: 10%;
+        right: -20%;
+    }
+    .secondSection .content .images{
+        width: 300px;
+        height: 400px;
+    }
+    .secondSection .content .thumbNail{
+        width: 200px;
+        height: 150px;
+        position: absolute;
+        top: 10%;
+        right: -20%;
+    }
+    .firstSection .content .textContent .contentBox{
+        margin-top: 20px;
+    }
+    .secondSection .content .textContent .contentBox{
+        margin-top: 20px;
+    }
+}
+
+@media(max-width:780px) {
+}
+
+
+@media(max-width:480px){
+    header .tagline h1{
+        font-size: 2rem;
+    }
+
+    .firstSection .content .images{
+        width: 300px;
+        height: 300px;
+    }
+
+    .schedule{
+        margin-top: 300px;
+    }
+    
+}
